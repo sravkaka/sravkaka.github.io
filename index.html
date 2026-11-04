@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sravanthi Kakarla | Interactive Resume</title>
+  <meta name="description" content="Interactive resume of Sravanthi Kakarla, Senior Product Manager at Microsoft — scroll through a journey of skills, experience and education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-goto="intro">SK<span>.</span></a>
+    <nav class="nav" aria-label="Sections">
+      <button data-goto="about">About</button>
+      <button data-goto="skills">Skills</button>
+      <button data-goto="journey">Experience</button>
+      <button data-goto="education">Education</button>
+      <button data-goto="awards">Awards</button>
+      <button data-goto="contact">Contact</button>
+    </nav>
+    <div class="progress" aria-hidden="true"><div class="progress-fill"></div></div>
+  </header>
+
+  <div class="viewport" aria-live="polite">
+    <div class="layer layer-clouds" aria-hidden="true"></div>
+    <div class="layer layer-far" aria-hidden="true"></div>
+    <div class="layer layer-mid" aria-hidden="true"></div>
+    <main class="track" id="track"></main>
+    <div class="ground" aria-hidden="true"><div class="road"></div></div>
+    <div class="walker" id="walker" aria-hidden="true"></div>
+    <div class="hint" id="hint">Scroll or use <kbd>←</kbd> <kbd>→</kbd> to explore</div>
+  </div>
+
+  <script src="data/resume.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
